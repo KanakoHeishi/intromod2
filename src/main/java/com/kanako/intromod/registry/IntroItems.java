@@ -24,9 +24,9 @@ public class IntroItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                         .nutrition(6)   // 栄養
                         .saturationModifier(0.8f)   // 隠し満腹度
-                        // .fast() // 食べるスピードを早くする
+                        .fast() // 食べるスピードを早くする
                         .alwaysEdible() // 満腹でも食べられる
-                        // .effect(new MobEffectInstance(MobEffects.GLOWING, 600), 1.0f)
+                        .effect(new MobEffectInstance(MobEffects.GLOWING, 600), 1.0f)
                     .build())));
     // 飲み物
     public static final RegistryObject<Item> RUM = ITEMS.register("rum",

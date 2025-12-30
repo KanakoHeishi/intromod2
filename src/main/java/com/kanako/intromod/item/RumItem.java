@@ -27,7 +27,7 @@ public class RumItem extends Item {
     @Override
     public ItemStack finishUsingItem(ItemStack pStack, Level pLevel, LivingEntity pLivingEntity) {
         // エフェクトを追加
-        // pLivingEntity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 100));
+        pLivingEntity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 100));
 
         // アイテムの消費
         if (pLivingEntity instanceof Player player
